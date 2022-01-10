@@ -13,9 +13,9 @@
  */
 typedef struct listint_s
 {
-	const int n;
-	struct listint_s *prev;
-	struct listint_s *next;
+        const int n;
+        struct listint_s *prev;
+        struct listint_s *next;
 } listint_t;
 
 /* Prototypes for mandatory tasks */
@@ -33,6 +33,7 @@ void counting_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
 void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
+void counting_sort_r(int *array, size_t size, int pos, int *out, int *ca);
 void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
 
